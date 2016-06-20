@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="contest_car_detection" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/contest_car_detection" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../opencv/mingw4.7ocv2.4.6/include" />
+					<Add directory="../opencv/mingw4.7ocv2.4.6/include/opencv" />
+					<Add directory="../opencv/mingw4.7ocv2.4.6/include/opencv2" />
+					<Add directory="include" />
+					<Add directory="../mvf/include" />
+				</Compiler>
+				<Linker>
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_calib3d246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_contrib246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_core246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_features2d246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_flann246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_gpu246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_highgui246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_imgproc246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_legacy246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_ml246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_nonfree246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_objdetect246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_photo246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_stitching246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_superres246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_video246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\libopencv_videostab246.dll" />
+					<Add library="..\opencv\mingw4.7ocv2.4.6\bin\opencv_ffmpeg246.dll" />
+					<Add library="..\mvf\bin\Debug\mvf.dll" />
+					<Add directory="../opencv/mingw4.7ocv2.4.6/bin" />
+					<Add directory="../mvf/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/contest_car_detection" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/GeneralLibs.h" />
+		<Unit filename="include/Imageset.h" />
+		<Unit filename="include/car_detector.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Imageset.cpp" />
+		<Unit filename="src/car_detector.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

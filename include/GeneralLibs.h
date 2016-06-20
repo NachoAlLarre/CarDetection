@@ -1,0 +1,9 @@
+#include "cv.h"
+#include "highgui.h"
+#include "mvf.h"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <stdlib.h>
+#include <vector>
+#include <cmath>
